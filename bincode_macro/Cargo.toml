@@ -1,0 +1,16 @@
+[package]
+name = "bincode_macro"
+version = "0.1.0"
+edition = "2021"
+authors = ["Felicity Yin <yinjingping2022@gmail.com>"]
+definition = "Add macros to bincode to make it easier to use"
+license = "MIT"
+repository = "https://github.com/felicityin/bincode-macro"
+readme = "https://github.com/felicityin/bincode-macro#readme"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0"
+syn = "2.0"
