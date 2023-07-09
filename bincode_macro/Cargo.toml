@@ -1,12 +1,11 @@
 [package]
 name = "bincode_macro"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Felicity Yin <yinjingping2022@gmail.com>"]
-definition = "Add macros to bincode to make it easier to use"
+description = "Add macros to bincode to make it easier to use"
 license = "MIT"
 repository = "https://github.com/felicityin/bincode-macro"
-readme = "https://github.com/felicityin/bincode-macro#readme"
 
 [lib]
 proc-macro = true
