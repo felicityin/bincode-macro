@@ -8,6 +8,13 @@ Add macro `Serde` to [bincode](https://github.com/bincode-org/bincode) to make i
 cargo add bincode_macro
 ```
 
+Or add dependencies.
+```
+[dependencies]
+bincode = { version = "=2.0.0-rc.3" }
+bincode_macro = "0.1"
+```
+
 # Usage
 
 ```
