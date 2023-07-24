@@ -1,5 +1,5 @@
 [package]
-name = "bincode_macro"
+name = "bincode_macro_usage"
 version = "0.1.2"
 edition = "2021"
 authors = ["Felicity Yin <yinjingping2022@gmail.com>"]
@@ -7,9 +7,6 @@ description = "Add macros to bincode to make it easier to use"
 license = "MIT"
 repository = "https://github.com/felicityin/bincode-macro"
 
-[lib]
-proc-macro = true
-
 [dependencies]
-quote = "1.0"
-syn = "2.0"
+bincode = { version = "=2.0.0-rc.3" }
+bincode_macro = "0.1"

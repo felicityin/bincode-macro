@@ -13,7 +13,16 @@ struct World(Vec<Entity>);
 #[derive(Serde, Encode, Decode, PartialEq, Debug)]
 struct Worlds(Vec<World>);
 
+#[derive(Serde, Encode, Decode, PartialEq, Debug)]
+struct TestTupleStruct(u32, u32, u32);
+
 fn main() {
+    let entity = TestTupleStruct(1, 2, 3);
+    let encoded: Vec<u8> = entity.pack().unwrap();
+    println!("{:?} {}", encoded, encoded.len());
+    let (decoded, len): (TestTupleStruct, usize) = entity.unpack(&encoded).unwrap();
+    println!("{:?}, {}\n", decoded, len);
+
     let mut entity = Entity { x: 1, y: 4 };
     let encoded: Vec<u8> = entity.pack().unwrap();
     println!("{:?} {}", encoded, encoded.len());
